@@ -152,3 +152,7 @@ function colorCircle(centerX, centerY, radius, drawColor) {
 	canvasContext.fill();
 }
 
+function colorRect(leftX, topY, width, height, drawColor) {
+	canvasContext.fillStyle = drawColor;
+	canvasContext.fillRect(leftX, topY, width, height);
+}
