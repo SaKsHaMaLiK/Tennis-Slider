@@ -145,4 +145,10 @@ function draw() {
 	canvasContext.fillText("Your Score  " + playerScore, canvas.width / 4, 100);
 	canvasContext.fillText("Computer's Score  " + computerScore, 3 * canvas.width / 4, 100);
 }
+function colorCircle(centerX, centerY, radius, drawColor) {
+	canvasContext.fillStyle = drawColor;
+	canvasContext.beginPath();
+	canvasContext.arc(centerX, centerY, radius, 0, Math.PI * 2, true);
+	canvasContext.fill();
+}
 
